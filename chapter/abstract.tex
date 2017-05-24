@@ -1,17 +1,17 @@
 ﻿\begin{cnabstract}
 随着深度学习算法的复杂化和应用规模的不断增长，传统的计算机CPU、GPU芯片在进行神经网络运算时，受限于功耗与性能，不能满足计算的需求。我们的寒武纪深度学习处理器（以下简称神经网络处理器），通过定制专用的运算部件、设计高效的片上存储，有效地提高了处理器的运算、访存效率，从而获得相对通用处理器数量级提升的性能优势。在学术界和工业界获得了广泛关注。
 
-为了方便用户编程，减少开发难度，一个可靠、安全、稳定的神经网络处理器编译器是不可或缺的。而为了达到这个目的，就必须要由完善的测验流程与高效的测验框架来对其进行验证。然而，受深度学习指令集的特性所限，传统的编译器测验框架无法实现对神经网络处理器的测验，而仅依靠随机指令产生器进行测验效率过于低下。本文针对神经网络处理器指令以及编译器的特性进行了分析，提出并实现了一套完整的测验流程，为此我们设计了，随机网络生成器，寒武纪测验框架。
+为了方便用户编程，减少开发难度，一个可靠、安全、稳定的神经网络处理器编译器是不可或缺的。为了达到这个目的，就必须要由完善的测试流程与高效的测试框架来对其进行测试。然而，受深度学习指令集的特性所限，传统的编译器测试框架无法实现对神经网络处理器的测试，而仅依靠随机指令产生器进行测试效率过于低下。本文针对神经网络处理器指令以及编译器的特性进行了分析，提出并实现了一套神经网络处理器编译器的测试流程，为此我们设计了随机网络生成器及寒武纪测试框架。
 
-通过我们的神经网络处理器测验框架，我们大大加速了对神经网络处理器编译器的测验进程，保证了寒武纪系列神经网络处理器编译器的正确性及可靠性。
+通过我们的神经网络处理器测试框架，我们加速了对神经网络处理器编译器的测试进程，保证了寒武纪系列神经网络处理器编译器的正确性及可靠性。
 
-\keywords{深度学习\enskip 神经网络处理器\enskip Caffe编程框架\enskip 测验框架}
+\keywords{深度学习\enskip 神经网络处理器\enskip Caffe编程框架\enskip 测试框架}
 \end{cnabstract}
 
 \begin{enabstract}
-With the complexity of the deep learning algorithm and the growing application scale,limited by power consumption and performance,the traditional CPU, GPU chip can not meet the needs of computing in the neural network operation. Our Cambricon deep learning processor (neural network processor) effectively improves the processor's operation by customizing the dedicated computing components, the design of efficient on-chip storage.It gains superior performance advantages over the number of general purpose processors,so it has received extensive attention in academia and industry.
+With the complexity of the deep learning algorithm and the growing application scale,limited by power consumption and performance,the traditional CPU, GPU chip can not meet the needs of computing in the neural network operation. Our Cambricon deep learning processor (neural network processor) effectively improves the processor's operation by customizing the dedicated computing components and the design of efficient on-chip storage.It gains superior performance advantages over the number of general purpose processors,so it has received extensive attention in academia and industry.
 
-In order to facilitate user programming, reduce the difficulty of development, a reliable, safe and stable neural network processor compiler is indispensable.In order to achieve this goal, we needs a perfect test process and efficient test framework to verify it. However, the traditional compiler test framework can not achieve the test of the neural network processor.Only rely on the random command generator to test the efficiency is too low. In this paper, we analyze the characteristics of neural network processor and the characteristics of the compiler, and propose and achieve a complete set of test process. We alse designed the random network generator and the Cambrian test framework.
+In order to facilitate user programming, reduce the difficulty of development, a reliable, safe and stable neural network processor compiler is indispensable.In order to achieve this goal, we needs a perfect test process and efficient test framework to verify it. However, the traditional compiler test framework can not achieve the test of the neural network processor.Only rely on the random command generator to test the efficiency is too low. In this paper, we analyze the characteristics of neural network processor and the characteristics of the compiler, and propose and achieve a complete set of test process. We alse design the random network generator and the Cambrian test framework.
 
 We have greatly accelerated the neural network processor compiler test process to ensure that the Cambrian series of neural network processor compiler correctness and reliability by using our neural network processor test framework.
 
